@@ -1,0 +1,21 @@
+<div class="flex-row j-center">
+  <form [formGroup]="form">
+    <mat-form-field>
+      <input matInput placeholder="Nombre" formControlName="nombre" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Apellido" formControlName="apellido" />
+    </mat-form-field>
+  </form>
+</div>
+<div class="flex-row j-center">
+  <button
+    mat-raised-button
+    [disabled]="form.invalid"
+    color="primary"
+    (click)="save()"
+  >
+    Enviar
+  </button>
+</div>

@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-rows: 15% 1fr 1fr;
+}
+
+$flex: flex;
+.flex-row {
+  display: $flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: $flex;
+  flex-direction: column;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.a-center {
+  align-items: center;
+}
